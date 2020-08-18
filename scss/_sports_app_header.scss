@@ -1,0 +1,37 @@
+@import "variables";
+
+.sports_app__heading__title {
+  @include align-contents;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.sports_app__heading {
+  background-color: #F4F6F9;
+}
+.sports_app__heading__title img {
+  width: 186px;
+}
+
+ @media (min-width: $faux-column-width) {
+  .sports_app__heading {
+    background-color: #F4F6F9;
+    background-image: url(../img/bg_header.png);
+    background-position-x: 40vw;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+
+      & .sports_app__heading__title {
+        position: absolute;
+        left: calc(50% - 557px);
+        margin-top: auto;
+        margin-bottom: 183px;
+        padding-top: 50px;
+    }
+
+  }
+  .sports_app__heading__title img {
+    width: 92px;
+  }
+}

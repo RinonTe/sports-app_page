@@ -1,0 +1,88 @@
+@import "variables";
+
+
+.sports_app__contents__heading {
+  font-family: 'lato-bold';
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-block-start: 0;
+  letter-spacing: 0.03em;
+  color: $heading-color;
+}
+
+.sports_app__contents__paragraph {
+  font-family: 'lato-regular';
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: $paragraph-color;
+  margin-bottom: 50px;
+}
+
+//From here is the styles for the user interface contents
+.sports_app__heading__title__logolink {
+  text-transform: uppercase;
+}
+
+.user_interface_section {
+  & .contents--user__header {
+    margin-top: 55px;
+  }
+  & a{
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+  }
+
+  & .sports_app__contents__paragraph {
+    margin-bottom: 25px;
+  }
+
+}
+
+// Style for the features contents
+.features_section {
+  background: #FAFAFA;
+
+  & .sports_app__contents__heading {
+    padding-top: 42px;
+  }
+
+  & .sports_app__navigation__features {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+}
+
+
+
+
+
+@media (min-width: $faux-column-width) {
+  .sports_app__contents {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+.sports_app__heading .sports_app__contents:first-of-type {
+  padding-top: 250px;
+  padding-bottom: 150px;
+}
+  .sports_app__contents__heading,
+  .sports_app__contents__paragraph {
+    text-align: start;
+  }
+
+  .sports_app__contents__heading {
+    max-width: 546px;
+  }
+
+  .sports_app__contents__paragraph {
+    max-width: 453px;
+  }
+}
+

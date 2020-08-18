@@ -1,0 +1,81 @@
+@import "variables";
+
+footer {
+  background-color: $footer-background-color;
+    & span {
+      color: transparent;
+    }
+
+    & .sports_app__contents--footer-heading {
+      margin-top: 0;
+      padding-top: 41px;
+    }
+}
+
+.footer_navigation__links {
+    @include reset-list;
+    & a {
+      color: $footer-text-color;
+    }
+}
+
+.footer_navigation__links__homepage {
+  display: none;
+}
+
+.footer_navigation__links--offers {
+  width: 348px;
+  padding-top: 34px;
+  padding-bottom: 45px;
+}
+
+.footer_navigation__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer_navigation__links--icons {
+  justify-content: start;
+}
+.footer_navigation__links__media {
+  display: block;
+  background-repeat: no-repeat;
+  padding-bottom: 16px;
+}
+
+.navigation__links__media--tweeter {
+  background-image: url(../img/icon_twitter.svg);
+}
+
+.navigation__links__media--facebook {
+  background-image: url(../img/icon_facebook.svg);
+}
+
+
+.navigation__links__media--instagram {
+  background-image: url(../img/icon_instagram.svg);
+}
+
+@media (min-width: $faux-column-width) {
+  .sports_app__contents--footer-heading {
+    display: none;
+  }
+
+
+  .footer_navigation {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+  }
+  .footer_navigation__links {
+     padding-top: 48px;
+  }
+  .footer_navigation__links__homepage {
+    display: flex;
+  }
+
+  .footer_navigation__links--icons {
+    order: 3;
+  }
+}
+

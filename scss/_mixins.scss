@@ -1,0 +1,15 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin align-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin  links-style {
+  text-decoration: none;
+}

@@ -1,0 +1,64 @@
+@import "variables";
+.tailor_experience_navigation_contents {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.tailor_experience__navigation__contents__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tailor_experience__navigation__contents__list {
+  & svg {
+    fill: #084482;
+  }
+  &  p {
+  color: $paragraph-color;
+  }
+}
+@media (min-width: $faux-column-width) {
+  .tailor-experience_section {
+    background-color: $footer-background-color;
+    background-image: url(../img/background_blue_rectangles.svg);
+    background-repeat: no-repeat;
+    background-position-y: -16px;
+    background-position-x: -72px;
+    padding-top: 76px;
+    padding-bottom: 67px;
+  }
+  .sports_app__contents--tailor-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tailor_experience_navigation_contents {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 87px;
+     row-gap: 49px;
+  }
+
+  .tailor_experience__navigation__contents__list {
+    align-items: flex-start;
+  }
+  .tailor-experience_section {
+    & .tailor_experience__navigation__contents__list,
+    & .sports_app__contents__heading {
+      color: $footer-text-color;
+    }
+  }
+  .tailor_experience__navigation__contents__list p {
+    list-style-type:disc;
+    display:list-item;
+    list-style-position: inside;
+    margin-bottom: 0;
+    color: $footer-text-color;
+  }
+
+  .tailor_experience__navigation__contents__list svg{
+    fill:$footer-text-color;
+   }
+}
+

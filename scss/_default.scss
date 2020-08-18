@@ -1,0 +1,38 @@
+@import "font_face";
+@import "variables";
+
+:root {
+  --body-max-width: 1114px;
+  --article-max-width: 546px;
+  /* For mobile */
+  --article-margin-left: 20px;
+  --article-margin-right: 20px;
+  /* for desktop*/
+  --body-margin-left: 163px;
+}
+
+body {
+  margin: 0;
+  font-family: $font-lato-regular;
+}
+
+.sports_app__contents, .sports_app__navigation {
+  margin-left: var(--article-margin-left);
+  margin-right: var(--article-margin-right);
+}
+ul {
+@include reset-list;
+}
+a {
+  @include links-style;
+}
+
+header span,
+section span {
+ display: none;
+}
+
+
+
+
+

@@ -1,0 +1,96 @@
+@import "variables";
+
+.features_section {
+  padding-top: 57px;
+  padding-bottom: 86px;
+
+    & .sports_app__navigation {
+      margin: 0;
+    }
+
+    & .sports_app__navigation__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+  }
+}
+.sports_app__navigation__image {
+  margin-top: 50px;
+}
+
+.sports_app__contents__paragraph--featured {
+  font-family: $font-lato-bold;
+  text-align: start;
+  font-size: 28px;
+  line-height: 37px;
+  color: $heading-color;
+}
+
+.sports_app__navigation__links--featured__partners:nth-of-type(1) {
+   flex-basis: 50%;
+}
+
+.sports_app__navigation__links--featured__partners:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-basis: 50%;
+}
+.sports_app__navigation__links--featured__partners:nth-of-type(3) {
+   flex-basis: 35%;
+}
+
+.sports_app__navigation__links--featured__partners:nth-of-type(4) {
+   flex-basis: 35%;
+}
+
+ .sports_app__navigation__links--featured__partners:nth-of-type(6) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+
+@media (min-width: $faux-column-width) {
+.features_section {
+
+      & .sports_app__navigation__links {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+  }
+  .sports_app__contents__paragraph--featured {
+    margin-top: 0;
+    transform: translatex(75%);
+  }
+
+  .sports_app__navigation__links--featured__partners:nth-of-type(1) {
+    flex-basis: auto;
+ }
+
+ .sports_app__navigation__links--featured__partners:nth-of-type(2) {
+   flex-basis: auto;
+ }
+ .sports_app__navigation__links--featured__partners:nth-of-type(3) {
+    flex-basis: auto;
+ }
+
+ .sports_app__navigation__links--featured__partners:nth-of-type(4) {
+    flex-basis: auto;
+ }
+ .sports_app__navigation__links--featured__partners:nth-of-type(5) {
+   flex-basis: auto;
+ }
+
+  .sports_app__navigation__links--featured__partners:nth-of-type(6) {
+   flex-basis: auto;
+ }
+
+}
+
+

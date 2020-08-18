@@ -1,0 +1,38 @@
+@import "variables";
+@import "variables";
+
+.sports_app__heading .sports_app__navigation__links {
+  @include reset-list;
+  @include align-contents;
+  padding-inline-start: 0;
+  padding-bottom: 63px;
+}
+
+
+
+.sports_app__navigation__links__downloader img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.sports_app__navigation__links__downloader:first-of-type {
+  margin-right: 28.61px;
+}
+
+@media (min-width: $faux-column-width) {
+
+  .sports_app__heading .sports_app__navigation__links {
+      max-width: 346px;
+      justify-content:center;
+  }
+
+  .sports_app__navigation__links__downloader:first-of-type {
+    margin-right: 35.9px;
+
+  }
+
+  .sports_app__navigation {
+    margin-inline-start: 0;
+    }
+}
+
